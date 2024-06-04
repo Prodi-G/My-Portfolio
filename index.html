@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Portfolio</title>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css">
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet">
+</head>
+<body>
+    <div class="bg-container">
+        <img src="background.gif" alt="Background GIF" class="bg-gif">
+    </div>
+
+    <header>
+        <nav class="nav">
+            <div class="logo">MyPortfolio</div>
+            <ul class="nav-links">
+                <li class="nav-item active" data-target="#home"><a href="#home">Home</a></li>
+                <li class="nav-item" data-target="#about"><a href="#about">About</a></li>
+                <li class="nav-item" data-target="#projects"><a href="#projects">Projects</a></li>
+                <li class="nav-item" data-target="#contact"><a href="#contact">Contact</a></li>
+                <div class="indicator"></div>
+            </ul>
+            <div class="hamburger">
+                <i class="fas fa-bars"></i>
+            </div>
+        </nav>
+    </header>
+    
+    <section id="home">
+        <div class="hero-content">
+            <img src="profile.jpg" alt="Your Profile Picture" class="profile-picture">
+            <h1>Welcome to My Portfolio</h1>
+            <p>Bubele Mogashoa</p>
+            <button class="cta-button" onclick="document.getElementById('about').scrollIntoView({ behavior: 'smooth' })">Explore My Work</button>
+        </div>
+    </section>
+    
+    <section id="about">
+        <h2>About Me</h2>
+        <p>My name is Bubele Mogashoa, I'm 20 years old, dedicated learner and enthusiast in the field of game development, currently pursuing my studies at SAE Institute. Over the past year, I have immersed myself in the intricacies of game development, with a primary focus on mastering the skills that I'm so eager to learn. Alongside this, I have delved into the realms of web development, honing my skills in HTML, JavaScript, and CSS to craft immersive and dynamic user experiences. Additionally, my journey has led me to explore the Unity game engine and its accompanying language, C Sharp, as I strive to broaden my technical expertise in the realm of interactive entertainment.</p>
+        <p>With a fervent passion for technology and a relentless drive for innovation, I am committed to continuous learning and growth, seeking opportunities to contribute meaningfully to the ever-evolving landscape of game development.</p>
+        <p>Thank you for considering my portfolio.<br>Warm regards.<br>Contact me at: Onkegece@gmail.com</p>
+    </section>
+    
+    <section id="projects">
+        <h2>Projects</h2>
+        <div class="project">
+            <h3>Project 1</h3>
+            <p>One of my free time sketches that have been added to my portfolio.</p>
+            <img src="project1.jpg" alt="Project 1">
+        </div>
+        <div class="project">
+            <h3>Project 2</h3>
+            <p>One of my pieces for my main evidence with some inspiration from One Piece.</p>
+            <img src="project2.jpg" alt="Project 2">
+        </div>
+        <div class="project">
+            <h3>Project 3</h3>
+            <p>One of my first animations, with inspiration from Regular Show.</p>
+            <img src="project3.gif" alt="Project 3">
+        </div>
+        <div class="project">
+            <h3>Project 4</h3>
+            <p>This animation was also for one of my main evidences.</p>
+            <video controls>
+                <source src="project4.mp4" type="video/mp4">
+                Your browser does not support the video tag.
+            </video>
+        </div>
+        <div class="project">
+            <h3>Project 5</h3>
+            <p>One of my free time sketches.</p>
+            <img src="project5.jpeg" alt="Project 5">
+        </div>
+    </section>
+    
+    <section id="contact">
+        <h2>Contact</h2>
+        <form id="contact-form">
+            <label for="name">Name:</label>
+            <input type="text" id="name" name="name" required>
+            <label for="email">Email:</label>
+            <input type="email" id="email" name="email" required>
+            <label for="message">Message:</label>
+            <textarea id="message" name="message" required></textarea>
+            <button type="submit">Send</button>
+        </form>
+    </section>
+    
+    <footer>
+        <p>&copy; 2024 MyPortfolio. All Rights Reserved.</p>
+    </footer>
+
+    <audio id="background-music" loop>
+        <source src="background-music.mp3" type="audio/mp3">
+        Your browser does not support the audio element.
+    </audio>
+    <button id="music-toggle" onclick="toggleMusic()">Mute</button>
+
+    <script src="scripts.js"></script>
+</body>
+</html>
